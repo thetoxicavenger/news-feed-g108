@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
     Row, Card, Button, CardImg, CardTitle, CardText, CardGroup,
-    CardSubtitle, CardBody
+    CardSubtitle, CardBody, CardColumns
 } from 'reactstrap';
 
 class Article extends Component {
@@ -13,12 +13,21 @@ class Article extends Component {
         return (
             <div>
 
-                <CardGroup> 
-                  
-                    <CardBody> <CardTitle>{this.props.article.title}</CardTitle>
-                        <Card> <CardImg src={this.props.article.img} alt={this.props.article.title} />
-                       </Card> </CardBody>             
-                </CardGroup>
+
+
+                <CardColumns>
+      <Card>
+        <CardImg top width="100%" src={this.props.article.img} alt={this.props.article.title} />
+        <CardBody>
+          <CardTitle>Card title</CardTitle>
+          <CardSubtitle>Card subtitle</CardSubtitle>
+        </CardBody>
+      </Card>
+     
+    
+    </CardColumns>
+
+
 
             </div>
         );
