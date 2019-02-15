@@ -6,6 +6,13 @@ img.card-img{
   width:250px;
 }
 
+input[type="text"] {
+    margin:30px 10px 10px 10px;
+    min-width:100%;
+}
+
+color
+
 /*
 
 .image-wrapper{
@@ -27,9 +34,6 @@ body{
 
 }
 
-input {
-    margin:30px 10px 10px 10px;
-}
 
 .card-group{
     width: 300px;

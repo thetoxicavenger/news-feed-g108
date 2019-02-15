@@ -19,7 +19,7 @@ class Article extends Component {
       <Card>
         <CardImg top width="100%" src={this.props.article.img} alt={this.props.article.title} />
         <CardBody>
-          <CardTitle>Card title</CardTitle>
+          <CardText>{this.props.article.title} </CardText>
           <CardSubtitle>Card subtitle</CardSubtitle>
         </CardBody>
       </Card>
