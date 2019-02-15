@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Article from './Article'
-import { CardTitle, Card } from 'reactstrap'
+import { CardTitle, Card, Row } from 'reactstrap'
 
 class ArticlesList extends Component {
 
@@ -13,10 +13,9 @@ class ArticlesList extends Component {
             />)
 
         return (
-            <div>
-
+            <Row>
                 {listOfArticles}
-            </div>
+            </Row>
         );
     }
 }
